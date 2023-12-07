@@ -13,9 +13,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <App />
       <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/services" Component={Services} />
-        <Route path="/schedule-call" Component={ScheduleCall} />
+        <Route path="/" element={<Home title="Empower Ability Labs" />} />
+        <Route path="/services" element={<Services title="Services" />} />
+        <Route
+          path="/schedule-call"
+          element={<ScheduleCall title="Schedule A Call" />}
+        />
       </Routes>
       <footer className="container">
         <p>© Copyright Accessible Knowledge Base 2023</p>

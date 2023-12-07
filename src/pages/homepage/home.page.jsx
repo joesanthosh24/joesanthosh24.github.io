@@ -1,10 +1,14 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./home.styles.css";
 import CustomLightboxModal from "../../components/custom-modal/custom-modal.component";
 
-const Home = () => {
+const Home = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, []);
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (

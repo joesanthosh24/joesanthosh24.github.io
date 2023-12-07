@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Services = () => {
+const Services = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, []);
+
   return (
     <>
       <div className="headingContent">
