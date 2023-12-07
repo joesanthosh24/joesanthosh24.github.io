@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import CustomSwitch from "../../components/custom-switch/custom-switch.component";
 
@@ -8,7 +8,10 @@ import CustomCheckbox from "../../components/custom-checkbox/custom-checkbox.com
 import ErrorMessage from "../../components/error-message/error-message.component";
 import Message from "../../components/thank-you-message/thank-you-message.component";
 
-export default function ScheduleCall() {
+export default function ScheduleCall({ title }) {
+  useEffect(() => {
+    document.title = title;
+  }, []);
   const [receiveEmails, setReceiveEmails] = useState(false);
   const [businessName, setBusinessName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
