@@ -1,0 +1,43 @@
+.fieldset {
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+.legend {
+  display: inline-block;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.scheduleCallBtn {
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #363cb3;
+  border: none;
+}
+
+.scheduleCallBtn:active,
+.scheduleCallBtn:focus {
+  border-radius: 5px solid #363cb3;
+}
+
+.messageContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.errorContainer {
+  border: 1px solid #e63f3f;
+}
+
+.thankYouMessageContainer {
+  border: 1px solid #07527d;
+  text-align: center;
+  background-color: #07527d;
+  color: #fff;
+  font-weight: bold;
+}

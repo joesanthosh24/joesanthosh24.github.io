@@ -1,0 +1,29 @@
+.navbarContainer {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+}
+
+.aNavbarList {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin-bottom: 0 !important;
+  justify-content: space-around;
+  margin-left: 40px;
+  width: 300px;
+}
+
+.itemLink {
+  color: #000;
+}
+
+.itemLink:hover {
+  text-decoration: none;
+}
+
+.activeItemLink .itemLink {
+  color: #363cb3;
+}
