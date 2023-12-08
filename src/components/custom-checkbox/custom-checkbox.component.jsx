@@ -32,6 +32,7 @@ const CustomCheckbox = ({ label, forAttr, handleChecked }) => {
         onChange={handleChange}
         onKeyDown={handleChangeWithKey}
         tabIndex={0}
+        onClick={handleChange}
       >
         {label}
       </div>
